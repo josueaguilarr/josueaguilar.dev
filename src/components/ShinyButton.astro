@@ -3,7 +3,7 @@ const { disabled = false, className, animationDuration = 5 } = Astro.props;
 ---
 
 <div
-  class={`text-neutral-600 dark:text-[#b5b5b5a4] font-semibold bg-clip-text flex bg-light-gradient dark:bg-dark-gradient ${disabled ? "" : "animate-shine"} ${className}`}
+  class={`sm:text-base text-xs text-neutral-600 dark:text-[#b5b5b5a4] font-semibold bg-clip-text flex bg-light-gradient dark:bg-dark-gradient ${disabled ? "" : "animate-shine"} ${className}`}
   style={{
     backgroundSize: "200% 100%",
     WebkitBackgroundClip: "text",
