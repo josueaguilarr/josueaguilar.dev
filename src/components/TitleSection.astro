@@ -1,0 +1,15 @@
+---
+import type { JSX } from 'astro/jsx-runtime';
+
+interface Props {
+    Icon: JSX.Element
+}
+const { Icon } = Astro.props;
+---
+
+<div class="text-default-dark dark:text-default-light">
+  <p class="flex text-4xl font-semibold font-geist group/title">
+    <Icon class="size-10 group-hover/title:-rotate-12 duration-500 me-2" />
+    <slot />
+  </p>
+</div>
