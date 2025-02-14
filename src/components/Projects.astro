@@ -1,7 +1,129 @@
 ---
 import Container from "@components/Container.astro";
+import Arrow from "@icons/Arrow.svg";
+import React from "@icons/React.svg";
+import TypeScript from "@icons/TypeScript.svg";
+import Tailwind from "@icons/Tailwind.svg";
+import Supabase from "@icons/Supabase.svg";
+import Github from "@icons/Githubv2.svg";
+import AstroIcon from "@icons/Astro.svg";
+import Preact from "@icons/Preact.svg";
+
+const TECHS = {
+  REACT: {
+    name: "React",
+    icon: React,
+  },
+  TYPESCRIPT: {
+    name: "TypeScript",
+    icon: TypeScript,
+  },
+  TAILWIND: {
+    name: "Tailwind",
+    icon: Tailwind,
+  },
+  SUPABASE: {
+    name: "Supabase",
+    icon: Supabase,
+  },
+  ASTRO: {
+    name: "Astro",
+    icon: AstroIcon,
+  },
+  PREACT: {
+    name: "Preact",
+    icon: Preact,
+  }
+};
+
+const PROJECTS = [
+  {
+    title: "NotEz",
+    description:
+      "Plataforma de notas, una forma más simple y eficiente de organizar tus notas con grupos y filtros. Integración de autenticación y organizar a tu gusto.",
+    link: "https://notez-me.vercel.app",
+    github: "NotEz",
+    image: "/projects/note.png",
+    tags: [TECHS.REACT, TECHS.TYPESCRIPT, TECHS.SUPABASE, TECHS.TAILWIND],
+  },
+  {
+    title: "DiscoverAI",
+    description:
+      "Inteligencias artificiales gratuitas con beneficios para diversos sectores de la vida diaria. Encuentra herramientas que mejorarán tu día a día.",
+    link: "https://discover-ai.vercel.app/",
+    github: "DiscoverAI",
+    image: "/projects/discoverai.png",
+    tags: [TECHS.ASTRO, TECHS.PREACT, TECHS.TYPESCRIPT, TECHS.TAILWIND],
+  },
+];
 ---
 
-<Container>
-    Projectos
+<Container className="min-h-screen">
+  <div class="flex items-center justify-between">
+    <p
+      class="text-xl font-semibold font-geist text-default-dark dark:text-default-light"
+    >
+      Projects
+    </p>
+  </div>
+
+  {
+    PROJECTS.map(({ title, description, tags, image, github, link }) => (
+      <div class="flex mt-7 gap-7 font-geist group/card mb-16">
+        <div class="w-full sm:min-w-1/2">
+          <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl md:group-hover/card:-translate-y-1 md:group-hover/card:shadow-2xl lg:border lg:border-yellow-800 lg:hover:border-yellow-700 lg:hover:bg-yellow-800/50">
+            <img
+              alt={title}
+              class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover/card:scale-105"
+              loading="lazy"
+              src={image}
+            />
+          </div>
+        </div>
+
+        <div class="min-w-1/2 flex flex-col justify-between">
+          <div class="flex justify-between items-center">
+            {link ? (
+              <a
+                href={link}
+                target="_blank"
+                class="flex gap-1 items-center text-default-dark dark:text-default-light text-3xl font-bold duration-500 transition group/title"
+              >
+                {title}
+                <Arrow class="-rotate-45 size-7 opacity-50 duration-500 mb-2 group-hover/title:opacity-100 group-hover/title:translate-x-[2px]" />
+              </a>
+            ) : (
+              <p class="text-default-dark dark:text-default-light text-3xl font-bold">
+                {title}
+              </p>
+            )}
+
+            {github && (
+              <a
+                href={`https://github.com/josueaguilarr/${github}`}
+                target="_blank"
+              >
+                <Github class="size-6 opacity-50 hover:opacity-100 duration-500" />
+              </a>
+            )}
+          </div>
+          <p class="prose my-2 text-default-dark dark:text-default-light/70 text-lg">
+            {description}
+          </p>
+          <ul class="flex flex-row gap-x-2">
+            {tags.map((tech) => (
+              <li>
+                <span
+                  class={`flex gap-x-1 items-center bg-neutral-600 dark:bg-neutral-800 text-white rounded-xl text-xs py-1 px-2`}
+                >
+                  <tech.icon class="size-3" />
+                  {tech.name}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    ))
+  }
 </Container>
