@@ -96,7 +96,7 @@ export const PROJECTS: Project[] = [
   {
     title: "SEIJUVE",
     description:
-      "Free artificial intelligences with benefits for various sectors of daily life. Find tools that will improve your daily life.",
+      "First platform of indicators on youth in the state of Quintana Roo. Read, view graphs, filter and download information.",
     link: "https://seijuvequintanaroo.com/",
     image: "/projects/seijuve.png",
     tags: [TECHS.LARAVEL, TECHS.REACT, TECHS.MYSQL, TECHS.CSS],
@@ -104,7 +104,7 @@ export const PROJECTS: Project[] = [
   {
     title: "Google Keep Clone",
     description:
-      "Inteligencias artificiales gratuitas con beneficios para diversos sectores de la vida diaria. Encuentra herramientas que mejorarán tu día a día.",
+      "Clone in functionality and interface of the Google Keep platform, built as a SPA. Add, archive, pin, edit and delete the notes you want.",
     github: "google-keep-clone",
     image: "/projects/keepclone.png",
     tags: [TECHS.LARAVEL, TECHS.VUE, TECHS.MYSQL, TECHS.MATERIALUI],
@@ -112,7 +112,7 @@ export const PROJECTS: Project[] = [
   {
     title: "Auth",
     description:
-      "Inteligencias artificiales gratuitas con beneficios para diversos sectores de la vida diaria. Encuentra herramientas que mejorarán tu día a día.",
+      "Application for registration and authentication of users with validations, secure information in database. Developed without libraries.",
     github: "auth-php",
     image: "/projects/authapp.png",
     tags: [TECHS.PHP, TECHS.JS, TECHS.MYSQL, TECHS.CSS],
@@ -120,7 +120,7 @@ export const PROJECTS: Project[] = [
   {
     title: "Gif App",
     description:
-      "Inteligencias artificiales gratuitas con beneficios para diversos sectores de la vida diaria. Encuentra herramientas que mejorarán tu día a día.",
+      "Page that allows you to search for multiple GIFS using the Giphy API. You can keep a history of your searches and navigate between them.",
     link: "https://gif-app-josue.netlify.app/",
     github: "react-gif-expert",
     image: "/projects/gifapp.png",
