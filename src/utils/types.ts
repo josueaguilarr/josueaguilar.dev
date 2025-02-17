@@ -14,4 +14,12 @@ export type Project = {
     tags: Tech[]
 }
 
+export type Experience = {
+    startYear: string;
+    finishYear: string;
+    role: string;
+    place: string;
+    description: string;
+}
+
 export type TechKeys = "REACT" | "TYPESCRIPT" | "TAILWIND" | "SUPABASE" | "ASTRO" | "PREACT" | "CSS" | "JEST" | "PHP" | "JS" | "LARAVEL" | "MYSQL" | "VUE" | "MATERIALUI";
