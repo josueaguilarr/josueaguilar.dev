@@ -2,6 +2,7 @@
 import Container from "@components/Container.astro";
 import TitleSection from "./TitleSection.astro";
 import Briefcase from "@icons/Briefcase.svg";
+import Arrow from "@icons/Arrow.svg";
 import { EXPERIENCES } from "@/utils/data";
 ---
 
@@ -9,26 +10,50 @@ import { EXPERIENCES } from "@/utils/data";
   <TitleSection Icon={Briefcase}>Experience</TitleSection>
 
   <ol
-    class="ms-5 mt-7 relative border-l-2 border-gray-300 dark:border-neutral-200/15 dark:text-gray-400 font-geist"
+    class="ms-5 relative border-l-2 border-gray-300 dark:border-neutral-200/15 dark:text-gray-400 font-geist"
   >
     {
-      EXPERIENCES.map(({ startYear, finishYear, role, place, description }) => (
-        <li class="mb-10 ms-6">
-          <span class="absolute flex items-center justify-center size-3 bg-yellow-300 rounded-full mt-1.5 -start-[7px] dark:bg-[#fff562]" />
-          <time class="leading-tight text-default-dark/60 dark:text-default-light/40 text-sm">
-            {startYear} - {finishYear}
-          </time>
-          <p class="text-xl mt-3 font-bold text-default-dark dark:text-default-light">
-            {role}
-          </p>
-          <p class="text-md text-default-dark/60 dark:text-default-light/40">
-            {place}
-          </p>
-          <p class="text-md mt-3 text-default-dark/60 dark:text-default-light/60">
-            {description} 
-          </p>
-        </li>
-      ))
+      EXPERIENCES.map(
+        ({ startYear, finishYear, role, place, place_web, description }) => (
+          <li class="flex gap-5 mb-10 ms-6 mt-16">
+            <span class="sm:w-2/5">
+              <span class="absolute flex items-center justify-center size-3 bg-yellow-300/80 rounded-full mt-1.5 -start-[7px]" />
+              <time class="leading-tight text-default-dark/70 dark:text-default-light/50 text-sm">
+                {startYear} - {finishYear}
+              </time>
+              <span class="flex flex-col">
+                <p class="text-xl mt-3 font-bold text-default-dark dark:text-default-light">
+                  {role}
+                </p>
+                {place_web ? (
+                  <a
+                    rel="noreferrer noopener"
+                    target="_blank"
+                    href={place_web}
+                    class="flex items-center text-md text-default-dark/80 dark:text-default-light/50 dark:hover:text-default-light hover:text-default-dark duration-500 cursor-pointer group/place"
+                    title={`Visit ${place}`}
+                  >
+                    {place}
+                    {place_web && (
+                      <Arrow class="-rotate-45 size-4 opacity-50 duration-500 mb-2 group-hover/place:opacity-100 group-hover/place:translate-x-[2px]" />
+                    )}
+                  </a>
+                ) : (
+                  <p
+                    class="flex items-center text-md text-default-dark/80 dark:text-default-light/50"
+                    title={`Visit ${place}`}
+                  >
+                    {place}
+                  </p>
+                )}
+              </span>
+            </span>
+            <p class="sm:w-3/5 text-md text-default-dark/90 dark:text-default-light/70">
+              {description}
+            </p>
+          </li>
+        )
+      )
     }
   </ol>
 </Container>

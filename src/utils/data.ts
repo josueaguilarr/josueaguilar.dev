@@ -61,6 +61,7 @@ export const EXPERIENCES: Experience[] = [
         finishYear: "Currently",
         role: "FullStack Developer",
         place: "Coppel",
+        place_web: "https://www.coppel.com/",
         description: "Code analysis, troubleshooting, unit testing and code proposals for internal and external systems of the organization. Writing documentation and optimizing and updating obsolete code with best practices and technologies."
     },
     {
@@ -68,28 +69,30 @@ export const EXPERIENCES: Experience[] = [
         finishYear: "04/2023",
         role: "FullStack Developer",
         place: "Autonomous University of Quintana Roo",
-        description: "Code analysis, troubleshooting, unit testing and code proposals for internal and external systems of the organization. Writing documentation and optimizing and updating obsolete code with best practices and technologies."
+        place_web: "https://www.uqroo.mx/",
+        description: "Contribution of new interfaces, API consumption, code improvement and component optimization. Providing better accessibility to information for teachers of the institution. Obtaining greater attention and response to requests."
     },
     {
         startYear: "01/2022",
         finishYear: "12/2022",
         role: "FullStack Developer",
         place: "Quintana Roo Youth Institute",
-        description: "Code analysis, troubleshooting, unit testing and code proposals for internal and external systems of the organization. Writing documentation and optimizing and updating obsolete code with best practices and technologies."
+        place_web: "https://juventud.qroo.gob.mx/",
+        description: "Contribution of ideas, complete creation and deployment of the first indicators platform. In order to provide statistics on relevant indicators in the state of Quintana Roo. Providing opening customized searches with graphs."
     },
     {
         startYear: "07/2021",
         finishYear: "12/2021",
-        role: "IDAIPQROO",
-        place: "Autonomous University of Quintana Roo",
-        description: "Code analysis, troubleshooting, unit testing and code proposals for internal and external systems of the organization. Writing documentation and optimizing and updating obsolete code with best practices and technologies."
+        role: "FullStack Developer",
+        place: "IDAIPQROO",
+        description: "Database development, complete interface in public and administrative environment. Creation and consumption of APIs. With the purpose of attending the general problems of the city, obtaining a more efficient and optimal attention."
     },
     {
         startYear: "01/2021",
         finishYear: "06/2021",
-        role: "Integral SM2 Consulting",
-        place: "Autonomous University of Quintana Roo",
-        description: "Code analysis, troubleshooting, unit testing and code proposals for internal and external systems of the organization. Writing documentation and optimizing and updating obsolete code with best practices and technologies."
+        role: "FullStack Developer",
+        place: "Integral SM2 Consulting",
+        description: "Creation of new interfaces, contribution of ideas, deployment of the product on the server. This system enhanced service quality and accelerated response times to requests, ensuring greater efficiency in product management."
     },
     
 ]

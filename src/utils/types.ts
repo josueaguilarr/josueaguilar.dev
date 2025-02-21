@@ -19,6 +19,7 @@ export type Experience = {
     finishYear: string;
     role: string;
     place: string;
+    place_web?: string;
     description: string;
 }
 
