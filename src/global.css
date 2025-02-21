@@ -1,2 +1,27 @@
 @import "tailwindcss";
 @config "../tailwind.config.js";
+
+.gradientText {
+  background-image: linear-gradient(
+    225deg,
+    #faee42 20%,
+    #fcd31b 30%,
+    #fdd626 70%,
+    #fcf049 80%
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 500% auto;
+  animation: shine 8s ease-in-out infinite alternate;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}

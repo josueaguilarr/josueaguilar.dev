@@ -10,13 +10,19 @@ import Header from "./Header.astro";
 <Container className="min-h-screen sm:pt-38 pt-20">
   <div class="flex flex-col gap-10">
     <p
-      class="sm:text-8xl text-7xl font-geist font-bold text-default-dark dark:text-default-light"
+      class="flex sm:text-8xl text-7xl font-geist font-bold text-default-dark dark:text-default-light group"
     >
-      ¡Hey!, I'm <span class="text-yellow-300 dark:text-[#fff562]">Josue</span>
+      <span>¡Hey!, I'm <span class="gradientText">Josue</span></span>
+      <img
+        alt="my-personal-photo"
+        class="group-hover:opacity-100 opacity-0 transition-all duration-500 size-[75px] rounded-full ms-4 -mt-10"
+        loading="lazy"
+        src="cat-photo-profile.webp"
+      />
     </p>
 
     <p
-      class="prose sm:text-lg text-sm font-geist font-semibold text-default-dark dark:text-default-light opacity-80 hover:opacity-100 duration-300"
+      class="prose sm:text-lg text-sm font-geist font-semibold text-default-dark dark:text-default-light duration-300"
     >
       FullStack Web Developer with +4 years building awesome platforms and
       contribuiting in project around the world. <span
