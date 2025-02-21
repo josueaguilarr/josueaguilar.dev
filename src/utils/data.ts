@@ -8,7 +8,7 @@ export const PROJECTS: Project[] = [
             "Notes platform, a simpler and more efficient way to organize your notes with groups and filters. Authentication integration and organize to your liking.",
         link: "https://notez-me.vercel.app",
         github: "NotEz",
-        image: "/projects/notez.png",
+        image: "/projects/notez.webp",
         tags: [TECHS.REACT, TECHS.TYPESCRIPT, TECHS.SUPABASE, TECHS.TAILWIND],
     },
     {
@@ -17,7 +17,7 @@ export const PROJECTS: Project[] = [
             "Free artificial intelligences with benefits for various sectors of daily life. Find tools that will improve your daily life.",
         link: "https://discover-ai.vercel.app/",
         github: "DiscoverAI",
-        image: "/projects/discoverai.png",
+        image: "/projects/discoverai.webp",
         tags: [TECHS.ASTRO, TECHS.PREACT, TECHS.TYPESCRIPT, TECHS.TAILWIND],
     },
     {
@@ -25,7 +25,7 @@ export const PROJECTS: Project[] = [
         description:
             "First platform of indicators on youth in the state of Quintana Roo. Read, view graphs, filter and download information.",
         link: "https://seijuvequintanaroo.com/",
-        image: "/projects/seijuve.png",
+        image: "/projects/seijuve.webp",
         tags: [TECHS.LARAVEL, TECHS.REACT, TECHS.MYSQL, TECHS.CSS],
     },
     {
@@ -33,7 +33,7 @@ export const PROJECTS: Project[] = [
         description:
             "Clone in functionality and interface of the Google Keep platform, built as a SPA. Add, archive, pin, edit and delete the notes you want.",
         github: "google-keep-clone",
-        image: "/projects/keepclone.png",
+        image: "/projects/keepclone.webp",
         tags: [TECHS.LARAVEL, TECHS.VUE, TECHS.MYSQL, TECHS.MATERIALUI],
     },
     {
@@ -41,7 +41,7 @@ export const PROJECTS: Project[] = [
         description:
             "Application for registration and authentication of users with validations, secure information in database. Developed without libraries.",
         github: "auth-php",
-        image: "/projects/authapp.png",
+        image: "/projects/authapp.webp",
         tags: [TECHS.PHP, TECHS.JS, TECHS.MYSQL, TECHS.CSS],
     },
     {
@@ -50,7 +50,7 @@ export const PROJECTS: Project[] = [
             "Page that allows you to search for multiple GIFS using the Giphy API. You can keep a history of your searches and navigate between them.",
         link: "https://gif-app-josue.netlify.app/",
         github: "react-gif-expert",
-        image: "/projects/gifapp.png",
+        image: "/projects/gifapp.webp",
         tags: [TECHS.REACT, TECHS.CSS, TECHS.JEST],
     },
 ];
