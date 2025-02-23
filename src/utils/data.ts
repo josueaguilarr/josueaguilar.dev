@@ -68,7 +68,7 @@ export const EXPERIENCES: Experience[] = [
         startYear: "01/2023",
         finishYear: "04/2023",
         role: "FullStack Developer",
-        place: "Autonomous University of Quintana Roo",
+        place: "UAQROO",
         place_web: "https://www.uqroo.mx/",
         description: "Contribution of new interfaces, API consumption, code improvement and component optimization. Providing better accessibility to information for teachers of the institution. Obtaining greater attention and response to requests."
     },
@@ -76,7 +76,7 @@ export const EXPERIENCES: Experience[] = [
         startYear: "01/2022",
         finishYear: "12/2022",
         role: "FullStack Developer",
-        place: "Quintana Roo Youth Institute",
+        place: "IQJ",
         place_web: "https://juventud.qroo.gob.mx/",
         description: "Contribution of ideas, complete creation and deployment of the first indicators platform. In order to provide statistics on relevant indicators in the state of Quintana Roo. Providing opening customized searches with graphs."
     },
