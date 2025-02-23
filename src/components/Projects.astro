@@ -12,8 +12,8 @@ import TitleSection from "./TitleSection.astro";
 
   {
     PROJECTS.map(({ title, description, tags, image, github, link }) => (
-      <div class="flex lg:flex-row sm:flex-col flex-col mt-7 font-geist group/card">
-        <div class="w-full sm:min-w-1/2 pe-4">
+      <div class="flex lg:flex-row sm:flex-col flex-col mt-7 mb-20 sm:my-0 font-geist group/card">
+        <div class="w-full sm:min-w-1/2 pb-2 sm:pe-4">
           <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl md:group-hover/card:-translate-y-1 md:group-hover/card:shadow-2xl border border-yellow-500/30 lg:hover:border-yellow-700 lg:hover:bg-yellow-800/50">
             <img
               alt={title}
@@ -23,7 +23,7 @@ import TitleSection from "./TitleSection.astro";
           </div>
         </div>
 
-        <div class="min-w-1/2 flex flex-col justify-between ps-4">
+        <div class="min-w-1/2 flex flex-col justify-between pt-2 sm:ps-4">
           <div class="flex justify-between items-center">
             {link ? (
               <a
