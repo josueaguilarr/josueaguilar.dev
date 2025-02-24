@@ -1,6 +1,13 @@
 @import "tailwindcss";
 @config "../tailwind.config.js";
 
+@font-face {
+  font-family: 'Geist';
+  src: url('/public/fonts/GeistVariableFont.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
 .gradientText {
   background-image: linear-gradient(
     225deg,
