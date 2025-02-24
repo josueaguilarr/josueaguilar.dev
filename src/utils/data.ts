@@ -1,5 +1,9 @@
 import { TECHS } from "@/utils/consts";
-import { type Project, type Experience } from "@/utils/types";
+import { type Project, type Experience, type Contact } from "@/utils/types";
+import Linkedin from "@icons/Linkedin.svg";
+import Github from "@icons/Github.svg";
+import Mail from "@icons/Mail.svg";
+
 
 export const PROJECTS: Project[] = [
     {
@@ -95,4 +99,22 @@ export const EXPERIENCES: Experience[] = [
         description: "Creation of new interfaces, contribution of ideas, deployment of the product on the server. This system enhanced service quality and accelerated response times to requests, ensuring greater efficiency in product management."
     },
     
+]
+
+export const CONTACTS: Contact[] = [
+    {
+        contact: "LinkedIn",
+        url: "https://www.linkedin.com/in/josueaguilardev",
+        icon: Linkedin
+    },
+    {
+        contact: "Github",
+        url: "https://github.com/josueaguilarr",
+        icon: Github
+    },
+    {
+        contact: "josueaguilardev@gmail.com",
+        url: "mailto:josueaguilardev@gmail.com",
+        icon: Mail
+    }
 ]

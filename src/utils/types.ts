@@ -23,4 +23,10 @@ export type Experience = {
     description: string;
 }
 
+export type Contact = {
+    contact: string;
+    url: string;
+    icon: JSX.Element
+}
+
 export type TechKeys = "REACT" | "TYPESCRIPT" | "TAILWIND" | "SUPABASE" | "ASTRO" | "PREACT" | "CSS" | "JEST" | "PHP" | "JS" | "LARAVEL" | "MYSQL" | "VUE" | "MATERIALUI";

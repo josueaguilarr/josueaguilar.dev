@@ -1,10 +1,7 @@
 ---
 import Container from "@components/Container.astro";
 import ShinyButton from "./ShinyButton.astro";
-import Linkedin from "@icons/Linkedin.svg";
-import Github from "@icons/Github.svg";
-import Mail from "@icons/Mail.svg";
-import Header from "./Header.astro";
+import { CONTACTS } from "@/utils/data";
 ---
 
 <Container className="sm:min-h-screen sm:pt-38 pt-20 py-32">
@@ -33,44 +30,20 @@ import Header from "./Header.astro";
     </p>
 
     <div class="flex flex-wrap gap-2">
-      <a
-        target="_blank"
-        href="https://www.linkedin.com/in/josueaguilardev"
-        class="flex items-center sm:px-[1.2em] sm:py-[0.4em] px-3.5 py-1.5 rounded-full border-2 border-neutral-500 dark:border-[#353535] dark:hover:bg-[#222] duration-300"
-      >
-        <ShinyButton animationDuration={4} className="gap-1.5">
-          <Linkedin
-            class="text-neutral-600 dark:text-neutral-500 sm:size-6 size-4.5"
-          />
-          Linkedin
-        </ShinyButton>
-      </a>
-
-      <a
-        target="_blank"
-        href="https://github.com/josueaguilarr"
-        class="flex items-center sm:px-[1.2em] sm:py-[0.4em] px-3.5 py-1.5 rounded-full border-2 border-neutral-500 dark:border-[#353535] dark:hover:bg-[#222] duration-300"
-      >
-        <ShinyButton animationDuration={4} className="gap-1.5">
-          <Github
-            class="text-neutral-600 dark:text-neutral-500 sm:size-6 size-4.5"
-          />
-          Github
-        </ShinyButton>
-      </a>
-
-      <a
-        target="_blank"
-        href="mailto:josueaguilardev@gmail.com"
-        class="flex items-center sm:px-[1.2em] sm:py-[0.4em] px-3.5 py-2 rounded-full border-2 border-neutral-500 dark:border-[#353535] dark:hover:bg-[#222] duration-300"
-      >
-        <ShinyButton animationDuration={4} className="gap-1.5">
-          <Mail
-            class="text-neutral-600 dark:text-neutral-500 sm:size-6 size-4.5"
-          />
-          josueaguilardev@gmail.com
-        </ShinyButton>
-      </a>
+      {
+        CONTACTS.map(({ contact, url, icon: Icon }, index) => (
+          <a
+            target="_blank"
+            href={url}
+            class="flex items-center sm:px-[1.2em] sm:py-[0.4em] px-3.5 py-1.5 rounded-full border-2 border-neutral-500 dark:border-[#353535] dark:hover:bg-[#222] duration-300"
+          >
+            <ShinyButton animationDuration={4} className="gap-1.5">
+              <Icon class="text-neutral-600 dark:text-neutral-500 sm:size-6 size-4.5" />
+              {contact}
+            </ShinyButton>
+          </a>
+        ))
+      }
     </div>
   </div>
 </Container>
