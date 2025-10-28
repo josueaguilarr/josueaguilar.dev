@@ -16,7 +16,18 @@ import "../global.css";
     <title>Josué Aguilar - Software Engineer</title>
   </head>
   <body>
-    <main class="bg-neutral-100/80 dark:bg-[#171717] min-h-screen w-full px-4">
+    <main
+      class="bg-neutral-100/80 dark:bg-[#171717] min-h-screen relative w-full px-4"
+    >
+      <div
+        class="fixed inset-0 z-10 pointer-events-none"
+        style={{
+          background:
+            "radial-gradient(ellipse 45% 45% at 50% 0%, rgba(251, 191, 36, 0.25), transparent 70%)",
+        }}
+      >
+      </div>
+      
       <slot />
     </main>
   </body>

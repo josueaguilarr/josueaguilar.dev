@@ -3,10 +3,10 @@ import ThemeToggle from "@components/ThemeToggle.astro";
 import Container from "./Container.astro";
 ---
 
-<Container className="sticky top-2 z-50 pt-2">
-  <nav
-    class="flex justify-between items-center bg-default-light dark:bg-default-dark backdrop-blur-md rounded-full px-6 py-2"
-  >
+<Container
+  className="sticky z-50 py-2 transition-all duration-100 ease-in-out"
+>
+  <nav class="flex justify-between items-center py-2">
     <a
       href="#"
       class="text-md text-default-dark dark:text-default-light flex items-center space-x-2 font-medium tracking-tight opacity-80 transition-opacity duration-300 hover:opacity-100 font-geist"
