@@ -2,6 +2,8 @@
 import Container from "@components/Container.astro";
 import ShinyButton from "./ShinyButton.astro";
 import { CONTACTS } from "@/utils/data";
+
+const YEAR_OF_EXPERIENCE = new Date().getFullYear() - 2020;
 ---
 
 <Container className="sm:py-38 py-32">
@@ -21,7 +23,7 @@ import { CONTACTS } from "@/utils/data";
     <p
       class="prose sm:text-lg text-sm font-geist font-semibold text-default-dark dark:text-default-light duration-300"
     >
-      Fullstack Developer with +4 years building awesome platforms and
+      Fullstack Developer with +{YEAR_OF_EXPERIENCE} years building awesome platforms and
       contribuiting in projects around the world. <span
         class="text-yellow-500 dark:text-[#fff562]"
       >
