@@ -29,4 +29,4 @@ export type Contact = {
     icon: JSX.Element
 }
 
-export type TechKeys = "REACT" | "TYPESCRIPT" | "TAILWIND" | "SUPABASE" | "ASTRO" | "PREACT" | "CSS" | "JEST" | "PHP" | "JS" | "LARAVEL" | "MYSQL" | "VUE" | "MATERIALUI";
+export type TechKeys = "REACT" | "TYPESCRIPT" | "TAILWIND" | "SUPABASE" | "ASTRO" | "PREACT" | "CSS" | "JEST" | "PHP" | "JS" | "LARAVEL" | "MYSQL" | "VUE" | "MATERIALUI" | "STRIPE" | "ZOD" | "VITE" | "ZUSTAND";

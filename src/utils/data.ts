@@ -7,13 +7,19 @@ import Mail from "@icons/Mail.svg";
 
 export const PROJECTS: Project[] = [
     {
+        title: "PlusFiscal",
+        description: "REPSE platform for tax management: connect with your customers and suppliers efficiently. Simplify the administration of your tax procedures and optimize your accounting processes.",
+        image: "/projects/pf.webp",
+        tags: [TECHS.REACT, TECHS.TYPESCRIPT, TECHS.TAILWIND, TECHS.STRIPE, TECHS.ZOD, TECHS.ZUSTAND ,TECHS.VITE],
+    },
+    {
         title: "NotEz",
         description:
             "Notes platform, a simpler and more efficient way to organize your notes with groups and filters. Authentication integration and organize to your liking.",
         link: "https://notez-me.vercel.app",
         github: "NotEz",
         image: "/projects/notez.webp",
-        tags: [TECHS.REACT, TECHS.TYPESCRIPT, TECHS.SUPABASE, TECHS.TAILWIND],
+        tags: [TECHS.REACT, TECHS.TYPESCRIPT, TECHS.SUPABASE, TECHS.TAILWIND, TECHS.VITE],
     },
     {
         title: "DiscoverAI",
@@ -22,7 +28,7 @@ export const PROJECTS: Project[] = [
         link: "https://discover-ai.vercel.app/",
         github: "DiscoverAI",
         image: "/projects/discoverai.webp",
-        tags: [TECHS.ASTRO, TECHS.PREACT, TECHS.TYPESCRIPT, TECHS.TAILWIND],
+        tags: [TECHS.ASTRO, TECHS.PREACT, TECHS.TYPESCRIPT, TECHS.TAILWIND, TECHS.VITE],
     },
     {
         title: "SEIJUVE",

@@ -13,7 +13,10 @@ import Laravel from "@icons/Laravel.svg";
 import MySQL from "@icons/Mysql.svg";
 import MaterialUI from "@icons/MaterialUI.svg";
 import Vue from "@icons/Vue.svg";
-
+import Stripe from "@icons/Stripe.svg";
+import Zod from "@icons/Zod.svg";
+import Vite from "@icons/Vite.svg";
+import Zustand from "@icons/Zustand.svg";
 
 export const TECHS: Record<TechKeys, Tech> = {
   REACT: {
@@ -71,5 +74,21 @@ export const TECHS: Record<TechKeys, Tech> = {
   MATERIALUI: {
     name: "Material UI",
     icon: MaterialUI,
+  },
+  STRIPE: {
+    name: "Stripe",
+    icon: Stripe,
+  },
+  ZOD: {
+    name: "Zod",
+    icon: Zod,
+  },
+  VITE: {
+    name: "Vite",
+    icon: Vite,
+  },
+  ZUSTAND: {
+    name: "Zustand",
+    icon: Zustand
   }
 };
